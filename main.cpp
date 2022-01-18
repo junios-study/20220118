@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Transition.h"
 #include "State.h"
+#include "Image.h"
 #include <vector>
 
 using namespace std;
@@ -41,6 +42,11 @@ int main()
 		}
 	}
 
+
+	vector<Image*> ImageList;
+	ImageList.push_back(new Image(0, 0, 165, 55, 128));
+	ImageList.push_back(new Image(0, 1, 133, 28, 182));
+	ImageList.push_back(new Image(0, 2, 116, 136, 63));
 
 
 	return 0;
