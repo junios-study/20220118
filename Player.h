@@ -1,5 +1,8 @@
 #pragma once
-//encapsulenation
+#include <iostream>
+
+using namespace std;
+//encapsulation
 class Player
 {
 private:
@@ -8,6 +11,16 @@ private:
 	int Gold;
 
 public:
+	Player() //기본 생성자(constructor)
+	{
+		cout << "플레이어 생성" << endl;
+	}
+
+	~Player() //소멸자, 파괴자(destructor)
+	{
+		cout << "플레이어 사라짐" << endl;
+	}
+
 	//const 함수 젤 앞 반환형
 	//const Player* GetPlayer(); // 반환값을 수정하지 마세요.
 
